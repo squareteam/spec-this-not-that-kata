@@ -1,5 +1,6 @@
-RSpec.configure do |config|
+require "rspec"
 
+RSpec.configure do |config|
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
   end
@@ -32,3 +33,6 @@ RSpec.configure do |config|
     `rm data/* 2> /dev/null`
   end
 end
+
+require "stnt"
+p SpecThisNotThat::TestToCodeMapping.new
