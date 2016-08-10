@@ -2,9 +2,12 @@ Gem::Specification.new do |gem|
   gem.name        = 'stnt'
   gem.version     = '0.0.0.kata'
   gem.licenses    = ['MIT']
-  gem.authors     = ["Paris Ruby Workshop"]
+  gem.authors     = ["Charly Poly", "Paul Bonaud"]
   gem.files       = Dir["lib/**/*.rb"]
   gem.executables = ['stnt']
+  gem.summary     = <<-SUMMARY
+    This gem is a rewrite inspired by the ttnt gem for Rspec.
+  SUMMARY
 
   gem.add_runtime_dependency "rspec"
 
